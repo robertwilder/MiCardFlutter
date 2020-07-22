@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
             child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             CircleAvatar(
               radius: 50.0,
@@ -35,50 +36,37 @@ class MyApp extends StatelessWidget {
               color: Colors.white,
               margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
               child: Padding(
-                padding: EdgeInsets.all(10.0),
-                child: Row(
-                  children: <Widget>[
-                    Icon(
+                  padding: EdgeInsets.all(5.0),
+                  child: ListTile(
+                    leading: Icon(
                       Icons.phone,
                       size: 20.0,
                       color: Colors.teal.shade900,
                     ),
-                    SizedBox(
-                      width: 10.0,
-                    ),
-                    Text('07517857203',
+                    title: Text('07517857203',
                         style: TextStyle(
                             fontFamily: 'SourceSansPro',
                             fontSize: 20.0,
-                            color: Colors.teal.shade900))
-                  ],
-                ),
-              ),
+                            color: Colors.teal.shade900)),
+                  )),
             ),
             Card(
 //              padding: EdgeInsets.all(10.0),
               color: Colors.white,
               margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
               child: Padding(
-                padding: EdgeInsets.all(10.0),
-                child: Row(
-                  children: <Widget>[
-                    Icon(
-                      Icons.email,
-                      size: 20.0,
-                      color: Colors.teal.shade900,
-                    ),
-                    SizedBox(
-                      width: 10.0,
-                    ),
-                    Text('robert.g.wilder@gmail.com',
-                        style: TextStyle(
-                            fontFamily: 'SourceSansPro',
-                            fontSize: 20.0,
-                            color: Colors.teal.shade900))
-                  ],
-                ),
-              ),
+                  padding: EdgeInsets.all(5.0),
+                  child: ListTile(
+                      leading: Icon(
+                        Icons.email,
+                        size: 20.0,
+                        color: Colors.teal.shade900,
+                      ),
+                      title: Text('robert.g.wilder@gmail.com',
+                          style: TextStyle(
+                              fontFamily: 'SourceSansPro',
+                              fontSize: 15.0,
+                              color: Colors.teal.shade900)))),
             )
           ],
         )),
@@ -86,7 +74,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-//
-//child: Container(
-//color: Colors.white,
-//child: Text('Hello'),
