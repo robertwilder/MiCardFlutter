@@ -31,10 +31,17 @@ class MyApp extends StatelessWidget {
                   fontFamily: 'SourceSansPro',
                   letterSpacing: 2.5),
             ),
+            SizedBox(
+              height: 30.0,
+              width: 150,
+              child: Divider(
+                color: Colors.teal.shade100,
+              ),
+            ),
             Card(
 //              padding: EdgeInsets.all(10.0),
               color: Colors.white,
-              margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+              margin: EdgeInsets.symmetric(vertical: 7.0, horizontal: 25.0),
               child: Padding(
                   padding: EdgeInsets.all(5.0),
                   child: ListTile(
@@ -53,7 +60,7 @@ class MyApp extends StatelessWidget {
             Card(
 //              padding: EdgeInsets.all(10.0),
               color: Colors.white,
-              margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+              margin: EdgeInsets.symmetric(vertical: 5.0, horizontal: 25.0),
               child: Padding(
                   padding: EdgeInsets.all(5.0),
                   child: ListTile(
